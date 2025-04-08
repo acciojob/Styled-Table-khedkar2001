@@ -1,15 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBSE Result Sheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    table {
+      width: 700px;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    thead {
+      background-color: #d9e1f2;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tfoot {
+      background-color: #e2f0d9;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+  <table>
+    <thead>
+      <tr>
+        <th>Subject Code</th>
+        <th>Subject</th>
+        <th>Marks Obtained</th>
+        <th>Max Marks</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>301</td>
+        <td>English Core</td>
+        <td>92</td>
+        <td>100</td>
+        <td>A1</td>
+      </tr>
+      <tr>
+        <td>041</td>
+        <td>Mathematics</td>
+        <td>87</td>
+        <td>100</td>
+        <td>A2</td>
+      </tr>
+      <tr>
+        <td>042</td>
+        <td>Physics</td>
+        <td>91</td>
+        <td>100</td>
+        <td>A1</td>
+      </tr>
+      <tr>
+        <td>043</td>
+        <td>Chemistry</td>
+        <td>85</td>
+        <td>100</td>
+        <td>A2</td>
+      </tr>
+      <tr>
+        <td>083</td>
+        <td>Computer Science</td>
+        <td>95</td>
+        <td>100</td>
+        <td>A1</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Total</td>
+        <td>450</td>
+        <td>500</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="5">Result: PASS</td>
+      </tr>
+    </tfoot>
+  </table>
+
 </body>
 </html>
